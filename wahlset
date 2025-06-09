@@ -1,1 +1,31 @@
-s
+diff --git a//dev/null b/interactive-site/index.html
+index 0000000000000000000000000000000000000000..a9ecb373d1884beff195fd5bfd65c125cba87ece 100644
+--- a//dev/null
++++ b/interactive-site/index.html
+@@ -0,0 +1,26 @@
++<!DOCTYPE html>
++<html lang="de">
++<head>
++  <meta charset="UTF-8">
++  <meta name="viewport" content="width=device-width, initial-scale=1.0">
++  <title>Interaktive Wahlliste</title>
++  <link rel="stylesheet" href="style.css">
++</head>
++<body>
++  <h1>Listenbearbeitung bei Parlamentswahlen (Lernumgebung)</h1>
++  <p>Ziehe die Kandidaten per Drag&nbsp;&amp;&nbsp;Drop in die gewünschte Reihenfolge. Nutze die Schaltflächen zum Hinzufügen oder Entfernen.</p>
++
++  <div id="app">
++    <ul id="candidate-list">
++      <li draggable="true">Kandidat A</li>
++      <li draggable="true">Kandidat B</li>
++      <li draggable="true">Kandidat C</li>
++    </ul>
++
++    <input type="text" id="new-candidate" placeholder="Neuer Kandidat">
++    <button id="add-btn">Hinzufügen</button>
++  </div>
++
++  <script src="script.js"></script>
++</body>
++</html>
